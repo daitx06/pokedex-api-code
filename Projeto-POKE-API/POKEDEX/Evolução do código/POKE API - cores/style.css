@@ -1,0 +1,183 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: #ef5350;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#search-container {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+#pokemon-search {
+    padding: 0.75rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    border: 2px solid #ef5350;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ef5350;
+    color: white;
+    border: 2px solid #ef5350;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+#pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#pokemon-container h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #030303;
+    text-transform: capitalize;
+}
+
+#pokemon-container img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem 0;
+    animation: bounce 1s ease infinite;
+}
+
+.pokemon-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-details p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.pokemon-type {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin: 0.2rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.pokemon-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-stats p {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Cores dos Tipos de Pokémon */
+.pokemon-type.normal { background-color: #A8A77A; }
+.pokemon-type.fire { background-color: #EE8130; }
+.pokemon-type.water { background-color: #6390F0; }
+.pokemon-type.electric { background-color: #F7D02C; }
+.pokemon-type.grass { background-color: #7AC74C; }
+.pokemon-type.ice { background-color: #96D9D6; }
+.pokemon-type.fighting { background-color: #C22E28; }
+.pokemon-type.poison { background-color: #A33EA1; }
+.pokemon-type.ground { background-color: #E2BF65; }
+.pokemon-type.flying { background-color: #A98FF3; }
+.pokemon-type.psychic { background-color: #F95587; }
+.pokemon-type.bug { background-color: #A6B91A; }
+.pokemon-type.rock { background-color: #B6A136; }
+.pokemon-type.ghost { background-color: #735797; }
+.pokemon-type.dragon { background-color: #6F35FC; }
+.pokemon-type.dark { background-color: #705746; }
+.pokemon-type.steel { background-color: #B7B7CE; }
+.pokemon-type.fairy { background-color: #D685AD; }
+
+/* Animações */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+        margin-top: 0;
+    }
+    
+    #search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #pokemon-search {
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+    }
+    
+    button {
+        border-radius: 4px;
+    }
+}
