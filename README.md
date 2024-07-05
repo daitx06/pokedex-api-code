@@ -1,4 +1,4 @@
-# POKEDEX COM API
+# PROJETO - API
 # Pokedex
 
 Uma aplicação de PokeAPI para exibir informações sobre Pokémon.
