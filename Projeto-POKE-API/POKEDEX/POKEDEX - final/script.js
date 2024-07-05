@@ -1,5 +1,5 @@
 async function searchPokemon() {
-    const query = document.getElementById('pokemon-search').value.toLowerCase().trim();
+    const query = document.getElementById('pokemon-busca').value.toLowerCase().trim();
     if (!query) {
         alert('Por favor, digite o nome ou ID de um Pokémon.');
         return;
@@ -32,17 +32,17 @@ function displayPokemon(pokemon, weaknesses) {
     const container = document.getElementById('pokemon-container');
     container.style.opacity = 0; // para animação de fade-out
     setTimeout(() => {
-        const types = pokemon.types.map(type => `<span class="pokemon-type ${type.type.name}">${type.type.name}</span>`).join('');
-        const weaknessesHTML = weaknesses.map(weakness => `<span class="pokemon-type ${weakness}">${weakness}</span>`).join('');
+        const types = pokemon.types.map(type => `<span class="pokemon-tipo ${type.type.name}">${type.type.name}</span>`).join('');
+        const weaknessesHTML = weaknesses.map(weakness => `<span class="pokemon-tipo ${weakness}">${weakness}</span>`).join('');
         container.innerHTML = `
             <h2>${pokemon.name}</h2>
             <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-            <div class="pokemon-details">
+            <div class="pokemon-detalhes">
                 <p>ID: ${pokemon.id}</p>
-                <div class="pokemon-types">
+                <div class="pokemon-tipos">
                     ${types}
                 </div>
-                <div class="pokemon-stats">
+                <div class="pokemon-status">
                     <p>Altura: ${pokemon.height / 10} m</p>
                     <p>Peso: ${pokemon.weight / 10} kg</p>
                 </div>

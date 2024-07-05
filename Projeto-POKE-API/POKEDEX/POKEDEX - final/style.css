@@ -41,14 +41,14 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#search-container {
+#busca-container {
     display: flex;
     margin-bottom: 2rem;
     width: 100%;
     max-width: 400px;
 }
 
-#pokemon-search {
+#pokemon-busca {
     padding: 1rem;
     font-size: 1rem;
     flex-grow: 1;
@@ -100,18 +100,18 @@ button:hover {
     animation: bounce 1s ease infinite;
 }
 
-.pokemon-details {
+.pokemon-detalhes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pokemon-details p {
+.pokemon-detalhes p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
 }
 
-.pokemon-type {
+.pokemon-tipo {
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     margin: 0.2rem;
@@ -119,40 +119,40 @@ button:hover {
     color: white;
 }
 
-.pokemon-stats {
+.pokemon-status {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pokemon-stats p {
+.pokemon-status p {
     padding: 0.5rem;
     border-radius: 4px;
     margin: 0.2rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/*Cores dos Tipos de Pokémon ===================================================================================================================*/
-.pokemon-type.normal { background-color: #A8A77A; }
-.pokemon-type.fire { background-color: #EE8130; }
-.pokemon-type.water { background-color: #6390F0; }
-.pokemon-type.electric { background-color: #F7D02C; }
-.pokemon-type.grass { background-color: #7AC74C; }
-.pokemon-type.ice { background-color: #96D9D6; }
-.pokemon-type.fighting { background-color: #C22E28; }
-.pokemon-type.poison { background-color: #A33EA1; }
-.pokemon-type.ground { background-color: #E2BF65; }
-.pokemon-type.flying { background-color: #A98FF3; }
-.pokemon-type.psychic { background-color: #F95587; }
-.pokemon-type.bug { background-color: #A6B91A; }
-.pokemon-type.rock { background-color: #B6A136; }
-.pokemon-type.ghost { background-color: #735797; }
-.pokemon-type.dragon { background-color: #6F35FC; }
-.pokemon-type.dark { background-color: #705746; }
-.pokemon-type.steel { background-color: #B7B7CE; }
-.pokemon-type.fairy { background-color: #D685AD; }
+/* Cores dos Tipos de Pokémon ======================================================================================================================================================*/
+.pokemon-tipo.normal { background-color: #A8A77A; }
+.pokemon-tipo.fire { background-color: #EE8130; }
+.pokemon-tipo.water { background-color: #6390F0; }
+.pokemon-tipo.electric { background-color: #F7D02C; }
+.pokemon-tipo.grass { background-color: #7AC74C; }
+.pokemon-tipo.ice { background-color: #96D9D6; }
+.pokemon-tipo.fighting { background-color: #C22E28; }
+.pokemon-tipo.poison { background-color: #A33EA1; }
+.pokemon-tipo.ground { background-color: #E2BF65; }
+.pokemon-tipo.flying { background-color: #A98FF3; }
+.pokemon-tipo.psychic { background-color: #F95587; }
+.pokemon-tipo.bug { background-color: #A6B91A; }
+.pokemon-tipo.rock { background-color: #B6A136; }
+.pokemon-tipo.ghost { background-color: #735797; }
+.pokemon-tipo.dragon { background-color: #6F35FC; }
+.pokemon-tipo.dark { background-color: #705746; }
+.pokemon-tipo.steel { background-color: #B7B7CE; }
+.pokemon-tipo.fairy { background-color: #D685AD; }
 
-/* Animações ====================================================================================================================================*/
+/* Animações =======================================================================================================================================================================*/
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -162,19 +162,19 @@ button:hover {
     }
 }
 
-/* Responsividade ================================================================================================================================*/
+/* Responsividade ===================================================================================================================================================================*/
 @media (max-width: 600px) {
     main {
         padding: 1rem;
         margin-top: 0;
     }
     
-    #search-container {
+    #busca-container {
         flex-direction: column;
         align-items: stretch;
     }
     
-    #pokemon-search {
+    #pokemon-busca {
         margin-bottom: 0.5rem;
         border-radius: 4px;
     }
