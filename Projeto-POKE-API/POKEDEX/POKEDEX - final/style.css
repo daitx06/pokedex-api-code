@@ -1,4 +1,4 @@
-/* Estilos Globais */
+
 
 body {
     font-family: 'Press Start 2P', cursive;
@@ -132,7 +132,7 @@ button:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Cores dos Tipos de Pokémon */
+/*Cores dos Tipos de Pokémon ===================================================================================================================*/
 .pokemon-type.normal { background-color: #A8A77A; }
 .pokemon-type.fire { background-color: #EE8130; }
 .pokemon-type.water { background-color: #6390F0; }
@@ -152,7 +152,7 @@ button:hover {
 .pokemon-type.steel { background-color: #B7B7CE; }
 .pokemon-type.fairy { background-color: #D685AD; }
 
-/* Animações */
+/* Animações ====================================================================================================================================*/
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -162,7 +162,7 @@ button:hover {
     }
 }
 
-/* Responsividade */
+/* Responsividade ================================================================================================================================*/
 @media (max-width: 600px) {
     main {
         padding: 1rem;
